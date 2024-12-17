@@ -4,7 +4,11 @@ const cellSideLength = 10;
 
 function mapAltitudeToColor(altitude) {
   //map(value, start1, stop1, start2, stop2, [withinBounds])
-  return map(altitude, 0, 5000, 0, 255);
+  //return color()
+  let r = map(altitude, 0, 5000, 0, 255);
+  let g = map(altitude, 0, 5000, 255, 0);
+  let b = map(altitude, 0, 5000, 128, 255);
+  return color(r, g, b);
 }
 
 function preload() {
