@@ -23,7 +23,7 @@ function draw(){
     for (let row = 0; row < map.getRowCount(); row++) {
         for (let column = 0; column < map.getColumnCount(); column++) {
             //upper left corner  x,y, height, width
-            rect(row + cellSideLength, column + cellSideLength, cellSideLength, cellSideLength)
+            rect(row * cellSideLength, column * cellSideLength, cellSideLength, cellSideLength)
             fill(240)
             
         }
